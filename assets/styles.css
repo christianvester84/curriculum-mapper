@@ -1,0 +1,38 @@
+
+:root{--blue1:#25417D;--blue2:#3561B5;--blue3:#7F9ED9;--blue4:#D4DFF2;--gray:#3C3C3C;--bg:#f8f9fb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#12203E;font:16px/1.45 Arial,Helvetica,sans-serif}
+.muted{color:#5f6b83;font-size:.9rem}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:var(--blue1);color:#fff}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:28px;height:28px;border-radius:50%;background:radial-gradient(circle,#fff 0 40%,var(--blue1) 41%)}
+.title{letter-spacing:.05em}
+.actions .btn{margin-left:8px}
+main{padding:16px}
+.grid{display:grid;gap:16px;grid-template-columns:1fr 1fr 1fr}
+.panel{background:#fff;border:1px solid #d7dce6;border-radius:8px;padding:12px}
+.panel-actions{display:flex;gap:8px;margin-top:8px}
+.btn{background:var(--blue2);color:#fff;border:none;border-radius:6px;padding:8px 12px;cursor:pointer}
+.btn.small{padding:6px 10px;font-size:14px}
+.btn.primary{background:var(--blue1)}
+.btn.outline{background:#fff;color:var(--blue1);border:1px solid var(--blue1)}
+.btn.danger{background:#a33}
+.btn:focus{outline:3px solid var(--blue3)}
+.input,select{padding:8px;border:1px solid #d7dce6;border-radius:6px;width:100%}
+.row{display:grid;grid-template-columns:160px 1fr;gap:10px;align-items:center;margin:10px 0}
+.list{margin:0;padding-left:24px;max-height:240px;overflow:auto}
+.list li{margin:8px 0}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th,.table td{border:1px solid #d7dce6;padding:6px 8px;text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips .chip{border:1px solid var(--blue3);background:var(--blue4);padding:3px 8px;border-radius:999px;cursor:pointer}
+.chips .chip.active{background:var(--blue2);color:#fff;border-color:var(--blue2)}
+.matrix{border:1px solid #d7dce6}
+.matrix th,.matrix td{border:1px solid #d7dce6;padding:4px 6px;text-align:center}
+.badge{display:inline-block;border-radius:4px;padding:2px 6px;font-size:12px}
+.badge.I{background:var(--blue4)}
+.badge.R{background:var(--blue3)}
+.badge.A{background:var(--blue2);color:#fff}
+.foot{padding:12px;color:#666;text-align:center;margin-top:12px}
+@media(max-width:1200px){.grid{grid-template-columns:1fr}}
+@media print{body{background:#fff}.panel{box-shadow:none;border-color:#bbb} .topbar,.foot{display:none}}
